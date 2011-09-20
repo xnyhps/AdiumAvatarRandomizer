@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		76723D821429192E00AB8C30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76723D811429192E00AB8C30 /* Cocoa.framework */; };
 		76723D8C1429192E00AB8C30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76723D8A1429192E00AB8C30 /* InfoPlist.strings */; };
-		76723D94142919C100AB8C30 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76723D93142919C100AB8C30 /* Adium.framework */; };
 		76723D98142919FE00AB8C30 /* AARPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723D97142919FE00AB8C30 /* AARPlugin.m */; };
 		76723D9B1429272F00AB8C30 /* AARAsynchronousImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723D9A1429272F00AB8C30 /* AARAsynchronousImageLoader.m */; };
+		76723D9D14292AAA00AB8C30 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76723D9C14292AAA00AB8C30 /* Adium.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +23,11 @@
 		76723D891429192E00AB8C30 /* AdiumAvatarRandomizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdiumAvatarRandomizer-Info.plist"; sourceTree = "<group>"; };
 		76723D8B1429192E00AB8C30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		76723D8D1429192E00AB8C30 /* AdiumAvatarRandomizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdiumAvatarRandomizer-Prefix.pch"; sourceTree = "<group>"; };
-		76723D93142919C100AB8C30 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = "../adium-1.4/build/Release/Adium.framework"; sourceTree = "<group>"; };
 		76723D96142919FE00AB8C30 /* AARPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AARPlugin.h; path = Source/AARPlugin.h; sourceTree = "<group>"; };
 		76723D97142919FE00AB8C30 /* AARPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AARPlugin.m; path = Source/AARPlugin.m; sourceTree = "<group>"; };
 		76723D991429272F00AB8C30 /* AARAsynchronousImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AARAsynchronousImageLoader.h; path = Source/AARAsynchronousImageLoader.h; sourceTree = "<group>"; };
 		76723D9A1429272F00AB8C30 /* AARAsynchronousImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AARAsynchronousImageLoader.m; path = Source/AARAsynchronousImageLoader.m; sourceTree = "<group>"; };
+		76723D9C14292AAA00AB8C30 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = ../adium3/build/Debug/Adium.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76723D821429192E00AB8C30 /* Cocoa.framework in Frameworks */,
-				76723D94142919C100AB8C30 /* Adium.framework in Frameworks */,
+				76723D9D14292AAA00AB8C30 /* Adium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 		76723D831429192E00AB8C30 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76723D93142919C100AB8C30 /* Adium.framework */,
+				76723D9C14292AAA00AB8C30 /* Adium.framework */,
 				76723D841429192E00AB8C30 /* AppKit.framework */,
 				76723D851429192E00AB8C30 /* CoreData.framework */,
 				76723D861429192E00AB8C30 /* Foundation.framework */,
@@ -194,7 +194,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -220,7 +220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -240,7 +240,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../adium-1.4/build/Release\"",
+					"\"$(SRCROOT)/../adium3/build/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Prefix.pch";
@@ -256,7 +256,7 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/../adium-1.4/build/Release\"",
+					"\"$(SRCROOT)/../adium3/build/Debug\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Prefix.pch";
