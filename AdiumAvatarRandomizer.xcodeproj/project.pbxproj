@@ -1,0 +1,258 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		76723D821429192E00AB8C30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76723D811429192E00AB8C30 /* Cocoa.framework */; };
+		76723D8C1429192E00AB8C30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76723D8A1429192E00AB8C30 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumAvatarRandomizer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		76723D811429192E00AB8C30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		76723D841429192E00AB8C30 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		76723D851429192E00AB8C30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		76723D861429192E00AB8C30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		76723D891429192E00AB8C30 /* AdiumAvatarRandomizer-Info.plist */ = {isa = PBXFileReference; path = "AdiumAvatarRandomizer-Info.plist"; sourceTree = "<group>"; };
+		76723D8B1429192E00AB8C30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		76723D8D1429192E00AB8C30 /* AdiumAvatarRandomizer-Prefix.pch */ = {isa = PBXFileReference; path = "AdiumAvatarRandomizer-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76723D7B1429192E00AB8C30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76723D821429192E00AB8C30 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76723D731429192E00AB8C30 = {
+			isa = PBXGroup;
+			children = (
+				76723D871429192E00AB8C30 /* AdiumAvatarRandomizer */,
+				76723D801429192E00AB8C30 /* Frameworks */,
+				76723D7F1429192E00AB8C30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76723D7F1429192E00AB8C30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76723D801429192E00AB8C30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76723D811429192E00AB8C30 /* Cocoa.framework */,
+				76723D831429192E00AB8C30 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76723D831429192E00AB8C30 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76723D841429192E00AB8C30 /* AppKit.framework */,
+				76723D851429192E00AB8C30 /* CoreData.framework */,
+				76723D861429192E00AB8C30 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		76723D871429192E00AB8C30 /* AdiumAvatarRandomizer */ = {
+			isa = PBXGroup;
+			children = (
+				76723D881429192E00AB8C30 /* Supporting Files */,
+			);
+			path = AdiumAvatarRandomizer;
+			sourceTree = "<group>";
+		};
+		76723D881429192E00AB8C30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76723D891429192E00AB8C30 /* AdiumAvatarRandomizer-Info.plist */,
+				76723D8A1429192E00AB8C30 /* InfoPlist.strings */,
+				76723D8D1429192E00AB8C30 /* AdiumAvatarRandomizer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76723D7D1429192E00AB8C30 /* AdiumAvatarRandomizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76723D901429192E00AB8C30 /* Build configuration list for PBXNativeTarget "AdiumAvatarRandomizer" */;
+			buildPhases = (
+				76723D7A1429192E00AB8C30 /* Sources */,
+				76723D7B1429192E00AB8C30 /* Frameworks */,
+				76723D7C1429192E00AB8C30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdiumAvatarRandomizer;
+			productName = AdiumAvatarRandomizer;
+			productReference = 76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76723D751429192E00AB8C30 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 76723D781429192E00AB8C30 /* Build configuration list for PBXProject "AdiumAvatarRandomizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 76723D731429192E00AB8C30;
+			productRefGroup = 76723D7F1429192E00AB8C30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76723D7D1429192E00AB8C30 /* AdiumAvatarRandomizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76723D7C1429192E00AB8C30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76723D8C1429192E00AB8C30 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76723D7A1429192E00AB8C30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		76723D8A1429192E00AB8C30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76723D8B1429192E00AB8C30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76723D8E1429192E00AB8C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		76723D8F1429192E00AB8C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		76723D911429192E00AB8C30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Prefix.pch";
+				INFOPLIST_FILE = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		76723D921429192E00AB8C30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Prefix.pch";
+				INFOPLIST_FILE = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76723D781429192E00AB8C30 /* Build configuration list for PBXProject "AdiumAvatarRandomizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76723D8E1429192E00AB8C30 /* Debug */,
+				76723D8F1429192E00AB8C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76723D901429192E00AB8C30 /* Build configuration list for PBXNativeTarget "AdiumAvatarRandomizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76723D911429192E00AB8C30 /* Debug */,
+				76723D921429192E00AB8C30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76723D751429192E00AB8C30 /* Project object */;
+}
