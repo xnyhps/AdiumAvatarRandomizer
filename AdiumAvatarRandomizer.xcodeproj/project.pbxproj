@@ -11,6 +11,7 @@
 		76723D8C1429192E00AB8C30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76723D8A1429192E00AB8C30 /* InfoPlist.strings */; };
 		76723D94142919C100AB8C30 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76723D93142919C100AB8C30 /* Adium.framework */; };
 		76723D98142919FE00AB8C30 /* AARPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723D97142919FE00AB8C30 /* AARPlugin.m */; };
+		76723D9B1429272F00AB8C30 /* AARAsynchronousImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723D9A1429272F00AB8C30 /* AARAsynchronousImageLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		76723D93142919C100AB8C30 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = "../adium-1.4/build/Release/Adium.framework"; sourceTree = "<group>"; };
 		76723D96142919FE00AB8C30 /* AARPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AARPlugin.h; path = Source/AARPlugin.h; sourceTree = "<group>"; };
 		76723D97142919FE00AB8C30 /* AARPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AARPlugin.m; path = Source/AARPlugin.m; sourceTree = "<group>"; };
+		76723D991429272F00AB8C30 /* AARAsynchronousImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AARAsynchronousImageLoader.h; path = Source/AARAsynchronousImageLoader.h; sourceTree = "<group>"; };
+		76723D9A1429272F00AB8C30 /* AARAsynchronousImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AARAsynchronousImageLoader.m; path = Source/AARAsynchronousImageLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 			children = (
 				76723D96142919FE00AB8C30 /* AARPlugin.h */,
 				76723D97142919FE00AB8C30 /* AARPlugin.m */,
+				76723D991429272F00AB8C30 /* AARAsynchronousImageLoader.h */,
+				76723D9A1429272F00AB8C30 /* AARAsynchronousImageLoader.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76723D98142919FE00AB8C30 /* AARPlugin.m in Sources */,
+				76723D9B1429272F00AB8C30 /* AARAsynchronousImageLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
