@@ -9,17 +9,22 @@
 /* Begin PBXBuildFile section */
 		76723D821429192E00AB8C30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76723D811429192E00AB8C30 /* Cocoa.framework */; };
 		76723D8C1429192E00AB8C30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76723D8A1429192E00AB8C30 /* InfoPlist.strings */; };
+		76723D94142919C100AB8C30 /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76723D93142919C100AB8C30 /* Adium.framework */; };
+		76723D98142919FE00AB8C30 /* AARPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 76723D97142919FE00AB8C30 /* AARPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumAvatarRandomizer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.AdiumPlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumAvatarRandomizer.AdiumPlugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		76723D811429192E00AB8C30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		76723D841429192E00AB8C30 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		76723D851429192E00AB8C30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		76723D861429192E00AB8C30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		76723D891429192E00AB8C30 /* AdiumAvatarRandomizer-Info.plist */ = {isa = PBXFileReference; path = "AdiumAvatarRandomizer-Info.plist"; sourceTree = "<group>"; };
+		76723D891429192E00AB8C30 /* AdiumAvatarRandomizer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AdiumAvatarRandomizer-Info.plist"; sourceTree = "<group>"; };
 		76723D8B1429192E00AB8C30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		76723D8D1429192E00AB8C30 /* AdiumAvatarRandomizer-Prefix.pch */ = {isa = PBXFileReference; path = "AdiumAvatarRandomizer-Prefix.pch"; sourceTree = "<group>"; };
+		76723D8D1429192E00AB8C30 /* AdiumAvatarRandomizer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdiumAvatarRandomizer-Prefix.pch"; sourceTree = "<group>"; };
+		76723D93142919C100AB8C30 /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = "../adium-1.4/build/Release/Adium.framework"; sourceTree = "<group>"; };
+		76723D96142919FE00AB8C30 /* AARPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AARPlugin.h; path = Source/AARPlugin.h; sourceTree = "<group>"; };
+		76723D97142919FE00AB8C30 /* AARPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AARPlugin.m; path = Source/AARPlugin.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76723D821429192E00AB8C30 /* Cocoa.framework in Frameworks */,
+				76723D94142919C100AB8C30 /* Adium.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,7 +52,7 @@
 		76723D7F1429192E00AB8C30 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.bundle */,
+				76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.AdiumPlugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +69,7 @@
 		76723D831429192E00AB8C30 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				76723D93142919C100AB8C30 /* Adium.framework */,
 				76723D841429192E00AB8C30 /* AppKit.framework */,
 				76723D851429192E00AB8C30 /* CoreData.framework */,
 				76723D861429192E00AB8C30 /* Foundation.framework */,
@@ -73,6 +80,7 @@
 		76723D871429192E00AB8C30 /* AdiumAvatarRandomizer */ = {
 			isa = PBXGroup;
 			children = (
+				76723D95142919D700AB8C30 /* Source */,
 				76723D881429192E00AB8C30 /* Supporting Files */,
 			);
 			path = AdiumAvatarRandomizer;
@@ -86,6 +94,15 @@
 				76723D8D1429192E00AB8C30 /* AdiumAvatarRandomizer-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		76723D95142919D700AB8C30 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				76723D96142919FE00AB8C30 /* AARPlugin.h */,
+				76723D97142919FE00AB8C30 /* AARPlugin.m */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +122,7 @@
 			);
 			name = AdiumAvatarRandomizer;
 			productName = AdiumAvatarRandomizer;
-			productReference = 76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.bundle */;
+			productReference = 76723D7E1429192E00AB8C30 /* AdiumAvatarRandomizer.AdiumPlugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -113,6 +130,9 @@
 /* Begin PBXProject section */
 		76723D751429192E00AB8C30 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
 			buildConfigurationList = 76723D781429192E00AB8C30 /* Build configuration list for PBXProject "AdiumAvatarRandomizer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -146,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76723D98142919FE00AB8C30 /* AARPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +188,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -185,7 +206,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -193,7 +214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -204,31 +225,39 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
 		76723D911429192E00AB8C30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../adium-1.4/build/Release\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Prefix.pch";
 				INFOPLIST_FILE = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "“$(HOME)/Library/Application Support/Adium 2.0/PlugIns/”";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = AdiumPlugin;
 			};
 			name = Debug;
 		};
 		76723D921429192E00AB8C30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../adium-1.4/build/Release\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Prefix.pch";
 				INFOPLIST_FILE = "AdiumAvatarRandomizer/AdiumAvatarRandomizer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "“$(HOME)/Library/Application Support/Adium 2.0/PlugIns/”";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = AdiumPlugin;
 			};
 			name = Release;
 		};
