@@ -26,5 +26,7 @@
 	<string>Copyright © 2011 __MyCompanyName__. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>AARPlugin</string>
+	<key>AIMinimumAdiumVersionRequirement</key>
+	<string>1.4.3</string>
 </dict>
 </plist>
