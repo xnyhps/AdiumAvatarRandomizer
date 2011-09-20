@@ -8,6 +8,7 @@
 
 #import "AARAsynchronousImageLoader.h"
 #import <CommonCrypto/CommonDigest.h>
+#import <Adium/AIListContact.h>
 
 @implementation AARAsynchronousImageLoader
 
@@ -25,6 +26,8 @@
 
 - (void)start
 {
+	if (![self.object isKindOfClass:[AIListContact class]]) return;
+	
 	AIListContact *contact = (AIListContact *)self.object;
 	
 	const char *chr = [[contact UID] UTF8String];

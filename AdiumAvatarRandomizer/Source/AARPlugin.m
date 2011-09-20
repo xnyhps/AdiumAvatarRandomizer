@@ -24,7 +24,7 @@
 
 - (AIUserIconPriority)priority
 {
-	return AIUserIconMediumPriority;
+	return AIUserIconLowPriority;
 }
 
 - (AIUserIconSourceQueryResult)updateUserIconForObject:(AIListObject *)inObject
